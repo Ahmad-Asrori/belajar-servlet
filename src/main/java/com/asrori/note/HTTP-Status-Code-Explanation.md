@@ -1,4 +1,4 @@
-##HTTP Status Code
+## HTTP Status Code
 
 The format of the HTTP request and HTTP response messages are similar and will have following structure −
 
@@ -21,7 +21,7 @@ Following is a list of HTTP status codes and associated messages that might be r
 
 ![](https://www.steveschoger.com/status-code-poster/img/status-code.png)
 
-####Methods to Set HTTP Status Code
+#### Methods to Set HTTP Status Code
 
 The following methods can be used to set HTTP Status Code in your servlet program. These methods are available with HttpServletResponse object.
 

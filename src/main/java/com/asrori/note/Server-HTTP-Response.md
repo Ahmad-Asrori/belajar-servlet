@@ -1,4 +1,4 @@
-##Server HTTP Response
+## Server HTTP Response
 
 As discussed in the previous chapter, when a Web server responds to an HTTP request, the response typically consists of a status line, some response headers, a blank line, and the document. A typical response looks like this −
 
@@ -25,7 +25,7 @@ Following is a summary of the most useful HTTP 1.1 response headers which go bac
 | 13 | **Retry-After**  This header can be used in conjunction with a 503 (Service Unavailable) response to tell the client how soon it can repeat its request.                                                                                                                                                                                                     |
 | 14 | **Set-Cookie**  This header specifies a cookie associated with the page.                                                                                                                                                                                                                                                                                     |
 
-####Methods to Set HTTP Response Header
+#### Methods to Set HTTP Response Header
 
 There are following methods which can be used to set HTTP response header in your servlet program. These methods are available with HttpServletResponse object.
 

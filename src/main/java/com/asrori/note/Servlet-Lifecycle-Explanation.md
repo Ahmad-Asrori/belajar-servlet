@@ -1,4 +1,4 @@
-#Servlet Lifecycle
+## Servlet Lifecycle
 
 A servlet life cycle can be defined as the entire process from its creation till the destruction. 
 The following are the paths followed by a servlet.
@@ -11,7 +11,7 @@ Now let us discuss the life cycle methods in detail.
 
 ![](https://beginnersbook.com/wp-content/uploads/2013/05/Servlet_Life_Cycle.jpg)
 
-####init() method
+#### init() method
 The init method is called only once. It is called only when the servlet is created, and not called for any user requests afterwards. 
 So, it is used for one-time initializations, just as with the init method of applets.
 
@@ -29,7 +29,7 @@ public void init() throws ServletException {
 }
 ```
 
-####service() method
+#### service() method
 The service() method is the main method to perform the actual task. 
 The servlet container (i.e. web server) calls the service() method to handle requests coming from the client( browsers) and to write the formatted response back to the client.
 
@@ -46,7 +46,7 @@ So you have nothing to do with service() method but you override either doGet() 
 
 The doGet() and doPost() are most frequently used methods with in each service request. Here is the signature of these two methods.
 
-####doGet() method
+#### doGet() method
 A GET request results from a normal request for a URL or from an HTML form that has no METHOD specified and it should be handled by doGet() method.
 
 ```java
@@ -55,7 +55,7 @@ public void doGet(HttpServletRequest request, HttpServletResponse response) thro
 }
 ```
 
-####doPost() method
+#### doPost() method
 A POST request results from an HTML form that specifically lists POST as the METHOD and it should be handled by doPost() method.
 
 ```java
@@ -64,7 +64,7 @@ public void doPost(HttpServletRequest request, HttpServletResponse response) thr
 }
 ```
 
-####destroy() method
+#### destroy() method
 
 The destroy() method is called only once at the end of the life cycle of a servlet. 
 This method gives your servlet a chance to close database connections, halt background threads, 
@@ -78,7 +78,7 @@ public void destroy() {
 }
 ```
 
-##Architecture Diagram
+## Architecture Diagram
 The following figure depicts a typical servlet life-cycle scenario.
 
 1. First the HTTP requests coming to the server are delegated to the servlet container.

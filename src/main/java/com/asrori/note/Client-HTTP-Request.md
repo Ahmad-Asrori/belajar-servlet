@@ -1,4 +1,4 @@
-##Client HTTP Request
+## Client HTTP Request
 
 When a browser requests for a web page, it sends lot of information to the web server which cannot be read directly because this information travel as a part of header of HTTP request. You can check HTTP Protocol for more information on this.
 
@@ -21,7 +21,7 @@ Following is the important header information which comes from browser side and 
 | 13 | **User-Agent**  This header identifies the browser or other client making the request and can be used to return different content to different types of browsers.                                                                                                                    |
 
 
-####Methods to read HTTP Header
+#### Methods to read HTTP Header
 
 There are following methods which can be used to read HTTP header in your servlet program. These methods are available with HttpServletRequest object
 
