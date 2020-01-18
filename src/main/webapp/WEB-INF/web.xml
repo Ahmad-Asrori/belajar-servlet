@@ -1,0 +1,96 @@
+<web-app xmlns="http://xmlns.jcp.org/xml/ns/javaee"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd" version="3.1">
+
+    <!--start servlet lifecycle example-->
+    <servlet>
+        <servlet-name>servlet-lifecycle-example</servlet-name>
+        <servlet-class>com.asrori.ServletLifecycleExample</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>servlet-lifecycle-example</servlet-name>
+        <url-pattern>/servlet-lifecycle-example</url-pattern>
+    </servlet-mapping>
+    <!--end servlet lifecycle example-->
+
+    <!--start form handling-->
+    <servlet>
+        <servlet-name>form-get-method-example</servlet-name>
+        <servlet-class>com.asrori.formhandling.FormGETExample</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>form-get-method-example</servlet-name>
+        <url-pattern>/form-get-method-example</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>form-post-method-example</servlet-name>
+        <servlet-class>com.asrori.formhandling.FormPOSTExample</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>form-post-method-example</servlet-name>
+        <url-pattern>/form-post-method-example</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>checkbox-reading</servlet-name>
+        <servlet-class>com.asrori.formhandling.ReadCheckbox</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>checkbox-reading</servlet-name>
+        <url-pattern>/checkbox-reading</url-pattern>
+    </servlet-mapping>
+    
+    <servlet>
+        <servlet-name>read-all-parameter</servlet-name>
+        <servlet-class>com.asrori.formhandling.ReadAllParams</servlet-class>
+    </servlet>
+    
+    <servlet-mapping>
+        <servlet-name>read-all-parameter</servlet-name>
+        <url-pattern>/read-all-parameter</url-pattern>
+    </servlet-mapping>
+    <!--end form handling-->
+
+    <!--start client HTTP request header example-->
+    <servlet>
+        <servlet-name>client-HTTP-request-header</servlet-name>
+        <servlet-class>com.asrori.httprequestresponse.ClientHTTPRequestExample</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>client-HTTP-request-header</servlet-name>
+        <url-pattern>/client-HTTP-request-header</url-pattern>
+    </servlet-mapping>
+    <!--end client HTTP request header example-->
+
+    <!--start server HTTP response Header-->
+    <servlet>
+        <servlet-name>server-HTTP-response-header</servlet-name>
+        <servlet-class>com.asrori.httprequestresponse.ServerHTTPResponse</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>server-HTTP-response-header</servlet-name>
+        <url-pattern>/server-HTTP-response-header</url-pattern>
+    </servlet-mapping>
+    <!--end server HTTP response Header-->
+
+    <!--start HTTP code example-->
+    <servlet>
+        <servlet-name>HTTP-code-example</servlet-name>
+        <servlet-class>com.asrori.httprequestresponse.HTTPCodeExample</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>HTTP-code-example</servlet-name>
+        <url-pattern>HTTP-code-example</url-pattern>
+    </servlet-mapping>
+    <!--end HTTP code example-->
+
+
+</web-app>
