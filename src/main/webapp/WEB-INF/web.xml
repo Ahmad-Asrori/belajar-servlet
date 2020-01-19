@@ -88,9 +88,57 @@
 
     <servlet-mapping>
         <servlet-name>HTTP-code-example</servlet-name>
-        <url-pattern>HTTP-code-example</url-pattern>
+        <url-pattern>/HTTP-code-example</url-pattern>
     </servlet-mapping>
     <!--end HTTP code example-->
+
+    <!--start servlet filter-->
+    <filter>
+        <filter-name>LogFilter</filter-name>
+        <filter-class>com.asrori.ServletFilterExample</filter-class>
+        <init-param>
+            <param-name>test-param</param-name>
+            <param-value>Initialization Parameter</param-value>
+        </init-param>
+    </filter>
+
+    <filter-mapping>
+        <filter-name>LogFilter</filter-name>
+        <url-pattern>/*</url-pattern>
+    </filter-mapping>
+    <!--end servlet filter-->
+
+    <!--start exception handling-->
+    <servlet>
+        <servlet-name>ErrorHandler</servlet-name>
+        <servlet-class>com.asrori.ErrorHandler</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>ErrorHandler</servlet-name>
+        <url-pattern>/ErrorHandler</url-pattern>
+    </servlet-mapping>
+
+    <error-page>
+        <error-code>404</error-code>
+        <location>/ErrorHandler</location>
+    </error-page>
+
+    <error-page>
+        <exception-type>java.lang.Throwable</exception-type >
+        <location>/ErrorHandler</location>
+    </error-page>
+    <!--end exception handling-->
+
+    <servlet>
+        <servlet-name>cookie-example</servlet-name>
+        <servlet-class>com.asrori.cookieandsession.FormCookies</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>cookie-example</servlet-name>
+        <url-pattern>/cookie-example</url-pattern>
+    </servlet-mapping>
 
 
 </web-app>
