@@ -130,6 +130,7 @@
     </error-page>
     <!--end exception handling-->
 
+    <!--start cookie and session ecaxmple-->
     <servlet>
         <servlet-name>cookie-example</servlet-name>
         <servlet-class>com.asrori.cookieandsession.FormCookies</servlet-class>
@@ -140,5 +141,33 @@
         <url-pattern>/cookie-example</url-pattern>
     </servlet-mapping>
 
+    <servlet>
+        <servlet-name>session-example</servlet-name>
+        <servlet-class>com.asrori.cookieandsession.SessionTracking</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>session-example</servlet-name>
+        <url-pattern>/session-example</url-pattern>
+    </servlet-mapping>
+    <!--end cookie and session ecaxmple-->
+
+    <!--start file upload example-->
+    <servlet>
+        <servlet-name>file-upload-example</servlet-name>
+        <servlet-class>com.asrori.UploadFileExample</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>file-upload-example</servlet-name>
+        <url-pattern>/file-upload-example</url-pattern>
+    </servlet-mapping>
+
+    <context-param>
+        <description>lokasi untuk menyimpan file</description>
+        <param-name>file-upload</param-name>
+        <param-value>/home/asrori/</param-value>
+    </context-param>
+    <!--end file upload example-->
 
 </web-app>
